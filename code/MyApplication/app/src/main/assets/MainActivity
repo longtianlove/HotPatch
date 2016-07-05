@@ -1,0 +1,172 @@
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.example.along.androidstudioanalysis;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.TextView;
+import com.android.tools.fd.runtime.IncrementalChange;
+import com.android.tools.fd.runtime.InstantReloadException;
+import com.example.along.androidstudioanalysis.SecondActivity;
+
+public class MainActivity extends AppCompatActivity {
+    public TextView textView;
+    public String s;
+    public Button button;
+
+    public MainActivity() {
+        IncrementalChange var1 = $change;
+        if(var1 != null) {
+            Object[] var2;
+            Object[] var10003 = var2 = new Object[1];
+            var10003[0] = var2;
+            Object[] var3 = (Object[])var1.access$dispatch("init$args.([Ljava/lang/Object;)Ljava/lang/Object;", var10003);
+            this(var3, (InstantReloadException)null);
+        } else {
+            super();
+        }
+
+        if(var1 != null) {
+            var1.access$dispatch("init$body.(Lcom/example/along/androidstudioanalysis/MainActivity;)V", new Object[]{this});
+        } else {
+            this.s = "1";
+        }
+    }
+
+    public void onCreate(Bundle savedInstanceState) {
+        IncrementalChange var2 = $change;
+        if(var2 != null) {
+            var2.access$dispatch("onCreate.(Landroid/os/Bundle;)V", new Object[]{this, savedInstanceState});
+        } else {
+            super.onCreate(savedInstanceState);
+            this.setContentView(2130968602);
+            boolean i = false;
+            byte i1 = 10;
+            this.textView = (TextView)this.findViewById(2131427412);
+            this.button = (Button)this.findViewById(2131427413);
+            this.button.setOnClickListener(new OnClickListener() {
+                public {
+                    IncrementalChange var2 = $change;
+                    if(var2 != null) {
+                        Object[] var3;
+                        Object[] var10003 = var3 = new Object[2];
+                        var10003[0] = var3;
+                        var10003[1] = MainActivity.this;
+                        Object[] var4 = (Object[])var2.access$dispatch("init$args.([Ljava/lang/Object;Lcom/example/along/androidstudioanalysis/MainActivity;)Ljava/lang/Object;", var10003);
+                        MainActivity.this = (MainActivity)var3[1];
+                    }
+
+                    if(var2 != null) {
+                        var2.access$dispatch("init$body.(Lcom/example/along/androidstudioanalysis/MainActivity$1;Lcom/example/along/androidstudioanalysis/MainActivity;)V", new Object[]{this, MainActivity.this});
+                    }
+                }
+
+                public void onClick(View view) {
+                    IncrementalChange var2 = $change;
+                    if(var2 != null) {
+                        var2.access$dispatch("onClick.(Landroid/view/View;)V", new Object[]{this, view});
+                    } else {
+                        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                        MainActivity.this.startActivity(intent);
+                    }
+                }
+
+                {
+                    String var3 = (String)((Object[])MainActivity.this)[0];
+                    switch(var3.hashCode()) {
+                    case -1968665286:
+                        return;
+                    case -302659933:
+                        return;
+                    default:
+                        throw new InstantReloadException(String.format("String switch could not find \'%s\' with hashcode %s in %s", new Object[]{var3, Integer.valueOf(var3.hashCode()), "com/example/along/androidstudioanalysis/MainActivity$1"}));
+                    }
+                }
+            });
+            this.textView.setText(i1 + "1111");
+            Log.e("longtianlove", "MainActivity---onCreate--1");
+            this.dosomething();
+        }
+    }
+
+    public void dosomething() {
+        IncrementalChange var1 = $change;
+        if(var1 != null) {
+            var1.access$dispatch("dosomething.()V", new Object[]{this});
+        } else {
+            Log.e("longtianlove", "MainActivity--dosomething--12345sadfa");
+        }
+    }
+
+    public void onStart() {
+        IncrementalChange var1 = $change;
+        if(var1 != null) {
+            var1.access$dispatch("onStart.()V", new Object[]{this});
+        } else {
+            super.onStart();
+            Log.e("longtianlove", "MainActivity---onStart");
+        }
+    }
+
+    public void onResume() {
+        IncrementalChange var1 = $change;
+        if(var1 != null) {
+            var1.access$dispatch("onResume.()V", new Object[]{this});
+        } else {
+            super.onResume();
+            Log.e("longtianlove", "MainActivity---onResume");
+        }
+    }
+
+    public void onPause() {
+        IncrementalChange var1 = $change;
+        if(var1 != null) {
+            var1.access$dispatch("onPause.()V", new Object[]{this});
+        } else {
+            super.onPause();
+            Log.e("longtianlove", "MainActivity---onPause");
+        }
+    }
+
+    public void onStop() {
+        IncrementalChange var1 = $change;
+        if(var1 != null) {
+            var1.access$dispatch("onStop.()V", new Object[]{this});
+        } else {
+            super.onStop();
+            Log.e("longtianlove", "MainActivity---onstop");
+        }
+    }
+
+    public void onDestroy() {
+        IncrementalChange var1 = $change;
+        if(var1 != null) {
+            var1.access$dispatch("onDestroy.()V", new Object[]{this});
+        } else {
+            super.onDestroy();
+            Log.e("longtianlove", "MainActivity---onDestroy");
+        }
+    }
+
+    MainActivity(Object[] var1, InstantReloadException var2) {
+        String var3 = (String)var1[0];
+        switch(var3.hashCode()) {
+        case -2089128195:
+            super();
+            return;
+        case 312598082:
+            this();
+            return;
+        default:
+            throw new InstantReloadException(String.format("String switch could not find \'%s\' with hashcode %s in %s", new Object[]{var3, Integer.valueOf(var3.hashCode()), "com/example/along/androidstudioanalysis/MainActivity"}));
+        }
+    }
+}
