@@ -132,16 +132,16 @@ ClassLoader classLoader = BootstrapApplication.class.getClassLoader();
       String apkFile = context.getApplicationInfo().sourceDir;
       long apkModified = apkFile != null ? new File(apkFile).lastModified() : 0L;
       createResources(apkModified);
-        *******************//新建一个ClassLoader并设置为原ClassLoader的parent**************
+*******************//新建一个ClassLoader并设置为原ClassLoader的parent**************
       setupClassLoaders(context, context.getCacheDir().getPath(), apkModified);
     }
-   *******************装载MyApplicaiton,并替换系统中的Applicaiton**************
+*******************装载MyApplicaiton,并替换系统中的Applicaiton**************
     createRealApplication();
-   *******************调用attachBaseContext完成初始化**************
+*******************调用attachBaseContext完成初始化**************
     super.attachBaseContext(context);
 
     if (this.realApplication != null)
-      *******************反射调用实际Application的attachBaseContext方法**************
+*******************反射调用实际Application的attachBaseContext方法**************
       try {
         Method attachBaseContext = ContextWrapper.class.getDeclaredMethod("attachBaseContext", new Class[] { Context.class });
 

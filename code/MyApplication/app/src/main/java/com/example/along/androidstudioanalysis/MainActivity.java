@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         dosomething();
     }
     public void dosomething(){
-        Log.e("longtianlove","MainActivity--dosomething--12345sadfa");
+        Log.e("longtianlove","MainActivity");
     }
 
 

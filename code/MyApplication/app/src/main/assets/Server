@@ -76,7 +76,7 @@ public class Server
   }
 
   private int handlePatches(List<ApplicationPatch> changes, boolean hasResources, int updateMode)
-  {
+  { 彬
     if (hasResources) {
       FileManager.startUpdate();
     }

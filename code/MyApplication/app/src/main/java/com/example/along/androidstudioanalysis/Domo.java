@@ -8,6 +8,6 @@ import android.util.Log;
 public class Domo {
     public String a="longtianlove";
     public void dosomething(){
-        Log.e("longtianlove",a+"abc");
+        Log.e("longtianlove",a+"ab");
     }
 }
